@@ -181,6 +181,9 @@ header .contacts {
     background: var(--button-bg);
     cursor: pointer;
     padding: 6px 22px;
+    transition-property: color, background, box-shadow;
+    transition-duration: 250ms, 250ms, 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover {
     color: var(--header-text-color);
@@ -331,10 +334,10 @@ header .contacts {
 .we-do-list-item:not(:last-child) {
     margin-right: 30px;
 }
-.we-do-card{
+.we-do-card {
     position: relative;
 }
-.we-do-card-desc{
+.we-do-card-desc {
     position: absolute;
     display: flex;
     width: 370px;
