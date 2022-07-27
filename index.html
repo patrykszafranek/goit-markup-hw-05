@@ -12,6 +12,13 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body>
+        <div class="backdrop" data-modal="">
+            <div class="modal">
+                <button class="close-modal" type="button" data-modal-close>
+                    X
+                </button>
+            </div>
+        </div>
         <header class="header">
             <div class="container">
                 <nav class="nav">
@@ -69,7 +76,11 @@
                         <h1 class="head-box-header">
                             Efektywne rozwiązania dla waszego biznesu
                         </h1>
-                        <button class="head-box-button" type="button">
+                        <button
+                            class="head-box-button"
+                            type="button"
+                            data-modal-open
+                        >
                             <span class="button-text">Zamów usługę</span>
                         </button>
                     </div>
