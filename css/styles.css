@@ -331,6 +331,25 @@ header .contacts {
 .we-do-list-item:not(:last-child) {
     margin-right: 30px;
 }
+.we-do-card{
+    position: relative;
+}
+.we-do-card-desc{
+    position: absolute;
+    display: flex;
+    width: 370px;
+    height: 70px;
+    top: 224px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--header-text-color);
+    background: rgba(47, 48, 58, 0.8);
+}
 /* ===== End we do styles ===== */
 /* ===== Team styles ===== */
 .index-section4 {
