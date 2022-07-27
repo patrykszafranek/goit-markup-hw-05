@@ -289,6 +289,14 @@ header .contacts {
     transition: transform 500ms linear, visibility 500ms linear,
         opacity 500ms linear;
 }
+
+.is-hidden {
+    transform: scaleY(0);
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
 .modal {
     position: absolute;
     top: 50%;
@@ -301,6 +309,7 @@ header .contacts {
         0px 2px 1px rgb(0 0 0 / 20%);
     border-radius: 4px;
 }
+
 .close-modal {
     position: absolute;
     top: 8px;
@@ -312,11 +321,10 @@ header .contacts {
     border-radius: 100%;
     cursor: pointer;
 }
-.is-hidden {
-    transform: scaleY(0);
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
+
+.close-modal:hover {
+    color: var(--link-color);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ===== End Modal box styles =====*/
 /* ===== Adv styles ===== */
