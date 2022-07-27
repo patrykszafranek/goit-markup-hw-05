@@ -58,6 +58,16 @@ body {
     align-items: center;
     margin: 0 auto;
 }
+.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 42.5px;
+    background: var(--link-color);
+    height: 4px;
+    border-radius: 10px 10px 10px 10px;
+}
 
 /* ===== Header styles =====*/
 
@@ -75,6 +85,12 @@ body {
 }
 .nav-logo-link span {
     color: var(--link-color);
+}
+.nav-list-link {
+    position: relative;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ===== End Nav logo styles =====*/
 
@@ -121,6 +137,9 @@ header .contacts {
     letter-spacing: 0.02em;
     color: var(--contact-color);
     margin-right: 50px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-link:hover,
 .contact-link:focus {
@@ -384,6 +403,9 @@ header .contacts {
     height: 44px;
     border-radius: 50%;
     fill: var(--icon-bg);
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-network-button:not(:last-child) {
     margin-right: 10px;
@@ -427,6 +449,8 @@ header .contacts {
     justify-content: center;
     align-items: center;
     fill: var(--icon-bg);
+    transition: fill 250ms, border 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-list-item:hover,
@@ -471,6 +495,9 @@ header .contacts {
     line-height: 1.714;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-address-link:hover,
 .footer-address-link:focus {
@@ -506,6 +533,9 @@ header .contacts {
     border-radius: 50%;
     fill: var(--header-text-color);
     background: var(--svg-background);
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-socialmedia-item:hover,
