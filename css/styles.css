@@ -200,7 +200,11 @@ header .contacts {
 .portfolio-overlay {
     margin: 0;
     position: relative;
+}
+.parent-overlay {
+    position: relative;
     overflow: hidden;
+    height: 294px;
 }
 .overlay {
     position: absolute;
